@@ -1,0 +1,98 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3a4764;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 400px;
+}
+
+
+.main__calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__themes {
+    display: flex;
+}
+
+.hero__title--text {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero__themes--text {
+    color: #ffffff;
+    font-size: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+
+
+.main__buttons--display {
+    width: 100%;
+    height: 80px;
+    background-color: #182034;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    border: solid #061a4e 2px;
+}
+
+.main__buttons--operator--blue--colums {
+    grid-column: span 2;
+    background-color: hsl(225, 21%, 49%);
+    border: none;
+    border-radius: 3px;
+}
+
+.main__buttons--blue {
+    background-color: hsl(225, 21%, 49%);
+    border: none;
+    border-radius: 3px;
+}
+
+
+.main__buttons--operator--orange--colums {
+    grid-column: span 2;
+    background-color: hsl(6, 63%, 50%);
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+.main__buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    background-color: #232c43;
+    border-radius: 10px;
+}
+
+button {
+    padding: 0.5em;
+    margin: 8px;
+}
+
+
+
+
+
