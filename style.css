@@ -8,18 +8,40 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.main {
-    width: 400px;
-}
 
 
 .main__calc {
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 1em;
+}
+
+.main__buttons--display {
+    padding: 1em;
+    width: 100%;
+    height: 80px;
+    background-color: #182034;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    border: solid #061a4e 2px;
+}
+
+.main__buttons--display--result {
+    margin-top: 2%;
+    margin-left: 80%;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.main__buttons--display--values {
+    margin-top: 20px;
+    margin-left: 90%;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 .hero {
@@ -45,22 +67,17 @@ body {
 }
 
 
-
-.main__buttons--display {
-    width: 100%;
-    height: 80px;
-    background-color: #182034;
-    border-radius: 10px;
-    margin-bottom: 1em;
-    border: solid #061a4e 2px;
-}
-
 .main__buttons--operator--blue--colums {
     grid-column: span 2;
     background-color: hsl(225, 21%, 49%);
     border: none;
     border-radius: 3px;
 }
+
+.main__buttons--operator--blue--colums:hover{
+    background-color: #35456d;
+}
+
 
 .main__buttons--blue {
     background-color: hsl(225, 21%, 49%);
@@ -69,11 +86,21 @@ body {
 }
 
 
+.main__buttons--blue:hover{
+    background-color: #35456d;
+}
+
+
 .main__buttons--operator--orange--colums {
     grid-column: span 2;
-    background-color: hsl(6, 63%, 50%);
+    background-color: #d03f2f;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
+}
+
+.main__buttons--operator--orange--colums:hover{
+    background-color: #9c1607;;
 }
 
 
@@ -82,9 +109,9 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
     background-color: #232c43;
     border-radius: 10px;
+    padding: 1em;
 }
 
 button {

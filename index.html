@@ -7,11 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="Calculator.js" type="text/javascript"></script>
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <div class="main" id="main"></div>
-    <script src="index.js"></script>
+        <div class="main__calc">
+            <div class="hero">
+                <div class="hero__title">
+                    <p class="hero__title--text">CALC</p>
+                </div>
+                <div class="hero__themes">
+                    <p class="hero__themes--text">V-</p>
+                    <p class="hero__themes--text">1.0</p>
+                </div>
+            </div>
+            <div class="main__buttons--display" id="display">
+                <div class="main__buttons--display--result" id="previous-value"></div>
+                <div class="main__buttons--display--values" id="current-value"></div>
+            </div>
+            <div class="main__buttons" id="numbers">
+                <button class="main__buttons--number number">7</button>
+                <button class="main__buttons--number number">8</button>
+                <button class="main__buttons--number number">9</button>
+                <button class="main__buttons--blue">&larr;</button>
+                <button class="main__buttons--number number">4</button>
+                <button class="main__buttons--number number">5</button>
+                <button class="main__buttons--number number">6</button>
+                <button class="main__buttons--operator operator">+</button>
+                <button class="main__buttons--number number">1</button>
+                <button class="main__buttons--number number">2</button>
+                <button class="main__buttons--number number">3</button>
+                <button class="main__buttons--operator operator">-</button>
+                <button class="main__buttons--number number">.</button>
+                <button class="main__buttons--number number">0</button>
+                <button class="main__buttons--operator operator">/</button>
+                <button class="main__buttons--operator operator">x</button>
+                <button class="main__buttons--operator--blue--colums">RESET</button>
+                <button class="main__buttons--operator--orange--colums operator">=</button>
+            </div>
+        </div>
 </body>
 </html>
