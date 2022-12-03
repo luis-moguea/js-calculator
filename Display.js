@@ -8,10 +8,9 @@ class Display {
     }
 
     addNumber(number){
-        this.currentValue = number;
+        this.currentValue = `${number}`;
         this.PrintValues();
     }
-
 
     PrintValues(){
         this.displayCurrentValue.textContent = this.currentValue;
