@@ -12,7 +12,5 @@ numbersButton.forEach(element => {
 });
 
 operatorButton.forEach(element => {
-    element.addEventListener("click", () => {
-        display.addNumber(element.innerHTML)
-    })
+    element.addEventListener("click", () => display.compute(element.value))
 });
