@@ -31,10 +31,9 @@ body {
 }
 
 .main__buttons--display--result {
-    margin-top: 2%;
-    margin-left: 80%;
     font-size: 25px;
     color: #ffffff;
+    float: right;
 }
 
 .main__buttons--display--values {
@@ -42,6 +41,7 @@ body {
     margin-left: 90%;
     font-size: 15px;
     color: #ffffff;
+    float: right;
 }
 
 .hero {
